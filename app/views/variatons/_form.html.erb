@@ -1,0 +1,47 @@
+<%= form_with(model: variaton, local: true) do |form| %>
+  <% if variaton.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(variaton.errors.count, "error") %> prohibited this variaton from being saved:</h2>
+
+      <ul>
+      <% variaton.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :product_id %>
+    <%= form.text_field :product_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :color_id %>
+    <%= form.text_field :color_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :size_id %>
+    <%= form.text_field :size_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :price %>
+    <%= form.text_field :price %>
+  </div>
+
+  <div class="field">
+    <%= form.label :stock %>
+    <%= form.number_field :stock %>
+  </div>
+
+  <div class="field">
+    <%= form.label :sku %>
+    <%= form.text_field :sku %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Product:</strong>
+  <%= @variaton.product %>
+</p>
+
+<p>
+  <strong>Color:</strong>
+  <%= @variaton.color %>
+</p>
+
+<p>
+  <strong>Size:</strong>
+  <%= @variaton.size %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @variaton.price %>
+</p>
+
+<p>
+  <strong>Stock:</strong>
+  <%= @variaton.stock %>
+</p>
+
+<p>
+  <strong>Sku:</strong>
+  <%= @variaton.sku %>
+</p>
+
+<%= link_to 'Edit', edit_variaton_path(@variaton) %> |
+<%= link_to 'Back', variatons_path %>

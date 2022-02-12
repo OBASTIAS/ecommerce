@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @name.description %>
+</p>
+
+<p>
+  <strong>Stock:</strong>
+  <%= @name.stock %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @name.price %>
+</p>
+
+<p>
+  <strong>Sku:</strong>
+  <%= @name.sku %>
+</p>
+
+<%= link_to 'Edit', edit_name_path(@name) %> |
+<%= link_to 'Back', names_path %>
